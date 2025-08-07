@@ -1,3 +1,5 @@
+# Código feito por Vinicius Gabriel de Souza Praxedes e Pedro Henrique Brandão
+
 import json
 import funcoesq1
 banco_de_dados = {} # Banco de dados 
