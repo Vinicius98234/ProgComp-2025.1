@@ -48,9 +48,8 @@ letras_fora2 = []
 
 while tentativas < 7 and not (acertou_palavra1 and acertou_palavra2): # Enquanto as tentativas forem menores que 7 e não tiver acertado as palavras continua rodando
     try:
-        tentativa = input(f"Tentativa {tentativas+1}/7: ").upper().strip() # Aqui é a tentativa
+        tentativa = input(f"Tentativa {tentativas+1}/7: ").upper().strip() # Converte para maiúsculas e remove espaços
         
-        # Validações dentro do while conforme pedido
         if not tentativa.isalpha():
             raise ValueError("Erro: Digite apenas letras, não use números!")
         if len(tentativa) != 5: # Se a tentativa tiver menos ou mais de 5 letras n roda
