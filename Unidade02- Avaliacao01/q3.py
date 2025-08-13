@@ -45,7 +45,7 @@ acertou_palavra1 = False # Aqui já começa definindo que não acertou a palavra
 acertou_palavra2 = False
 letras_fora1 = [] # Aqui é para botar as letras que não tem na palavra 1 e 2
 letras_fora2 = []
-
+print(palavra1, palavra2)
 while tentativas < 7 and not (acertou_palavra1 and acertou_palavra2): # Enquanto as tentativas forem menores que 7 e não tiver acertado as palavras continua rodando
     try:
         tentativa = input(f"Tentativa {tentativas+1}/7: ").upper().strip() # Converte para maiúsculas e remove espaços
@@ -124,6 +124,8 @@ while tentativas < 7 and not (acertou_palavra1 and acertou_palavra2): # Enquanto
                 print("Você acertou na quinta tentativa, pode melhorar!")
             elif tentativas == 5:
                 print("Você acertou na sexta tentativa, foi por pouco!")
+            elif tentativas == 6:
+                print("Você acertou na sétima tentativa, ufaa!")
             break
         
         tentativas += 1 # Conta tentativa
